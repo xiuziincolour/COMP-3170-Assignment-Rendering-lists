@@ -1,0 +1,114 @@
+.BookCatalog {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+.header {
+    color: rgb(255, 255, 255);
+    background: rgb(208, 176, 157);
+    border-bottom: 4px solid rgb(104, 16, 37);
+    text-align: center;
+    padding: 1em;
+    font-size: px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer {
+    color: rgb(255, 255, 255);
+    background: rgb(208, 176, 157);
+    border-top: 4px solid rgb(104, 16, 37);
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    gap: 2em;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 5px 0 20px;
+}
+
+.books,
+.newbook {
+    width: 220px;
+    height: 270px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.books {
+    border: 2px solid rgb(245, 106, 0);
+    background: rgb(255, 250, 233);
+    color: rgb(126, 33, 9);
+    align-items: center;
+}
+
+.newbook {
+    color: rgb(208, 148, 133);
+    cursor: pointer;
+    font-size: 20px;
+    border: 3px solid rgb(255, 147, 64);
+    border-radius: 20px;
+}
+
+.book-img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.books p {
+    font-size: 14px;
+}
+
+.newbook {
+    align-items: center;
+    justify-content: center;
+}
+
+.newbook:hover {
+    background: rgb(255, 245, 213);
+}
+
+.learn-more-btn {
+    display: block;
+    width: 100px;
+    margin: 5px auto 10px auto;
+    padding: 8px 16px;
+    background-color: rgb(245, 106, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background-color: rgb(200, 80, 0);
+    color: white;
+    transform: translateY(-2px);
+}

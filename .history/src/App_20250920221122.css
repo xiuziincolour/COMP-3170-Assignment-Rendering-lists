@@ -1,0 +1,30 @@
+.app-container {
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.book-card,
+.add-btn {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.add-btn {
+    background: #4cafef;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+}
+
+.add-btn:hover {
+    background: #3790d9;
+}
